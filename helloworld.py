@@ -8,4 +8,6 @@ circuit = qiskit.QuantumCircuit(qr, cr) # quantum circuit
 # this only works in jupyter notebook
 circuit.h(qr[0]) # Hadamard gate
 circuit.cx(qr[0], qr[1]) # CNOT
+circuit.measure(qr, cr) # measure
+
 print(circuit)
